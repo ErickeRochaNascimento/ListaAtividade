@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    float raio, altura, volume;
+    
+    printf("Calculadora de Volume");
+    printf("\nDigite a altura: ");
+    scanf("%f",&altura);
+    printf("Digite o raio: ");
+    scanf("%f",&raio);
+    volume = 3,14159 * (raio * raio) * altura;
+    
+    printf("O volume é: %.2f",volume);
+    return 0;
+}
