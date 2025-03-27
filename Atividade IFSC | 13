@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    float tempCelsius, tempFahrenheit;
+    printf("Convesor de Temperatura");
+    printf("\nDigite a Temperatura em Fahrenheit: ");
+    scanf("%f",&tempFahrenheit);
+    tempCelsius = ((tempFahrenheit - 32) * (0.5555555555555556));
+    printf("Temperatura em Graus Celsius: %f",tempCelsius);
+    return 0;
+}

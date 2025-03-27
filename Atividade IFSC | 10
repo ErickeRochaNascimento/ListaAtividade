@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int num1, num2, soma;
+    
+    printf("Soma Inteiros");
+    printf("\nDigite o primeiro valor: ");
+    scanf("%d",&num1);
+    printf("Digite o primeiro valor: ");
+    scanf("%d",&num2);
+    soma = (num1 + num2);
+    printf("Resultado: %d",soma);
+    return 0;
+}
