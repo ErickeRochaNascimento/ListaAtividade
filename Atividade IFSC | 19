@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int num,quadrado,cubo;
+    
+    printf("Calcule ao Quadrado");
+    printf("\nDigite um numero: ");
+    scanf("%d",&num);
+    
+    quadrado = pow(num,2);
+    cubo = pow(num,3);
+    
+    printf("%d ao quadrado: %d",num,quadrado);
+    printf("\n%d ao cubo: %d",num,cubo);
+
+    return 0;
+}

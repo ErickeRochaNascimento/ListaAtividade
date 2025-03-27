@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    float largura, comprimento, altura, volume;
+    printf("Calculo Volume do Paralelepipedo");
+    printf("\nDigite o comprimento: ");
+    scanf("%f",&comprimento);
+    printf("Digite a altura: ");
+    scanf("%f",&altura);
+    printf("Digite a largura: ");
+    scanf("%f",&largura);
+    
+    volume = comprimento * largura * altura;
+    
+    printf("Volume do Paralelepipedo: %f",volume);
+
+    return 0;
+}

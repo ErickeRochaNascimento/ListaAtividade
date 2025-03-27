@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int a,b,soma,quadrado;
+    
+    printf("Calcule ao Quadrado");
+    printf("\nDigite um numero: ");
+    scanf("%d",&a);
+    printf("Digite um numero: ");
+    scanf("%d",&b);
+    
+    quadrado = (a + b) * (a + b);
+    
+    printf("Quadrado da soma: %d",quadrado);
+
+    return 0;
+}
