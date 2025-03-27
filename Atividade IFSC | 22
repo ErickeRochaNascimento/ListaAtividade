@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    float val1,val2,media;
+    
+    printf("Calcule a Média");
+    printf("\nDigite um numero: ");
+    scanf("%f",&val1);
+    printf("Digite um numero: ");
+    scanf("%f",&val2);
+    
+    media = (val1 + val2)/2;
+
+    printf("A media de %f e %f é: %.2f\n", val1, val2, media);
+
+    return 0;
+}

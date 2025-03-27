@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int int1,int2;
+    float resto,divisao;
+    printf("Digite um valor inteiro: ");
+    scanf("%d",&int1);
+    printf("Digite um valor inteiro: ");
+    scanf("%d",&int2);
+    divisao = int1 / int2;
+    resto = int1 % int2;
+    printf("Quociente: %f",divisao);
+    printf("\nResto: %f",resto);
+    return 0;
+}
