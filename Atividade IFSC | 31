@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    float a,b;
+    printf("Digite um valor: ");
+    scanf("%f",&a);
+    printf("Digite um valor: ");
+    scanf("%f",&b);
+    if(a > b){
+        printf("Maior: %f",a);
+    }else{
+        if(b > a){
+            printf("Maior: %f",b);
+        }else{
+            printf("São iquais: %f",a);
+        }
+    }
+    return 0;
+}
