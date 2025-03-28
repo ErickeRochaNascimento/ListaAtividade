@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    float salarioBruto,salarioPreLiquido,salarioLiquido;
+    printf("Digite o Salário Bruto: ");
+    scanf("%f",&salarioBruto);
+    salarioPreLiquido = (salarioBruto * 0.90);
+    salarioLiquido = (salarioPreLiquido * 0.95);
+    printf("Salário Liquido: %.2f",salarioLiquido);
+    return 0;
+}
