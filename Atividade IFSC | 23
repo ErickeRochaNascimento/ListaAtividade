@@ -2,9 +2,9 @@
 
 int main() {
     float numA,numB;
-    printf("Digite dois valores: ");
+    printf("Digite um valor: ");
     scanf("%f",&numA);
-    printf("Digite dois valores: ");
+    printf("Digite um valor: ");
     scanf("%f",&numB);
     printf("Valor 1: %f\n",numB);
     printf("Valor 2: %f\n",numA);

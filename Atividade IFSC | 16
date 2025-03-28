@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    float a,b;
+    printf("Digite um valor: ");
+    scanf("%f",&a);
+    printf("Digite um valores: ");
+    scanf("%f",&b);
+    printf("Valor A: %f\n",b);
+    printf("Valor B: %f\n",a);
+    return 0;
+}
