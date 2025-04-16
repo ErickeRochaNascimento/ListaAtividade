@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int menu;
+    float num,raiz,porcentagem;
+    printf("Informe o numero: "); scanf("%f",&num);
+    printf("Menu: ");
+    printf("\n101-Raiz quadrada \n102-A metade \n103-10%% do número \n104-O dobro");
+    printf("\nInforme o numero referente a opção: "); scanf("%d",&menu);
+    
+    switch(menu)
+    {
+        case 101:
+            raiz = sqrt(num);
+            printf("%f",raiz);
+            break;
+        case 102:
+            printf("%f",num/2);
+            break;
+        case 103:
+            porcentagem = 0.10 * num;
+            printf("%f",porcentagem);
+            break;
+        case 104:
+            printf("%f",num*2);
+            break;
+        default:
+            printf("Codigo invalido");
+            break;
+    }
+
+    return 0;
+}
