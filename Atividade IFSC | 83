@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main() {
+     int num1, num2, soma, subtracao, multiplicacao, resto, divisao,menu;
+    
+    printf("OPERACOES SOBRE INTEIROS");
+    printf("\nDigite o primeiro valor: ");
+    scanf("%d",&num1);
+    printf("Digite o primeiro valor: ");
+    scanf("%d",&num2);
+    printf("\n1-Soma \n2-Subtração \n3-Multiplicação \n4-Divisão");
+    printf("\nInforme o numero referente a opção: "); scanf("%d",&menu);
+    scanf("%d",&num2);
+    soma = (num1 + num2);
+    subtracao = (num1 - num2);
+    multiplicacao = (num1 * num2);
+    divisao = (num1 / num2);
+    resto = (num1 % num2);
+    switch (menu)
+    {
+        case 1:
+            printf("%d + %d = %d",num1, num2, soma);
+            break;
+        case 2:
+            printf("\n%d - %d = %d",num1, num2, subtracao);
+            break;
+        case 3:
+            printf("\n%d * %d = %d",num1, num2, multiplicacao);
+            break;
+        case 4:
+            printf("\n%d / %d = %d",num1, num2, divisao);
+            break;
+        default:
+            printf("Numero Invalido");
+            break;
+    }
+   
