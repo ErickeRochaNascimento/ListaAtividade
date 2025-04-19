@@ -19,7 +19,7 @@ int main() {
         case 10: case 11: case 12:
             printf("A estação do ano corresponde ao mês %d é primavera",mes);
             break;
-        default: printf("Dia da semana inválido");
+        default: printf("Numero inválido");
     }
     return 0;
 }
