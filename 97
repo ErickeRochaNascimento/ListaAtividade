@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    float num,num2;
+    printf("Informe um numero: "); scanf("%f",&num);
+    
+    for(num2 = 0; num2 <= 13; num2 ++)
+    {
+        printf("\n%f * %.0f = %f",num,num2,num*num2);
+    }
+    return 0;
+}
