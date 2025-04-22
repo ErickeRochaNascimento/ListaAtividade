@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int num,num2;
+
+    printf("%-10s%-10s%-10s\n", "Numero", "Quadrado", "Cubo");
+    for(num = 0; num <= 10; num ++)
+    {
+        
+        printf("%-10d%-10d%-10d\n",num,num*num,num*num*num);
+        
+    }
+    return 0;
+}
