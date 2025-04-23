@@ -6,7 +6,7 @@ int main() {
     {
         total = total + num;;
     }
-    printf("%d",total);
+    printf("A soma dos números de 1 a 100 é: %d\n",total);
 
     return 0;
 }
