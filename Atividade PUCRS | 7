@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+   float nota1,nota2,nota3,media;
+   int codigo;
+ 
+   printf("Calculo de média alunos");
+   printf("\nInforme o codigo: ");
+       scanf("%d",&codigo);
+   
+   while(codigo != 0){
+       
+       printf("\nDigite a primeira nota: ");
+       scanf("%f",&nota1);
+       printf("Digite a segunda nota: ");
+       scanf("%f",&nota2);
+       printf("Digite a terceira nota: ");
+       scanf("%f",&nota3);
+       media = (nota1 + nota2 + nota3)/3;
+       printf("%f",media);
+       printf("\nInforme o codigo: ");
+       scanf("%d",&codigo);
+   }
+}
