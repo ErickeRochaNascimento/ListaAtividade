@@ -45,4 +45,4 @@ Cada arquivo contém:
 
 Professor: Heleno Cardoso  
 Curso: Linguagem de Programação C  
-UFBA - 2025  
+UNIRUY - 2025  
