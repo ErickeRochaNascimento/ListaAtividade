@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+    int quantidade_valores;
+    int i;
+    int valor_atual;
+    long long int fatorial_calculado;
+    int j;
+
+    printf("Quantos valores devem ser lidos? ");
+    scanf("%d", &quantidade_valores);
+
+    if (quantidade_valores > 0) {
+        printf("\n");
+        printf("Valor | Fatorial\n");
+        printf("------|-------------------\n");
+    } else {
+        printf("Nenhum valor a ser lido.\n");
+    }
+
+    for (i = 0; i < quantidade_valores; i++) {
+        printf("Digite o %d.o valor: ", i + 1);
+        scanf("%d", &valor_atual);
+
+        fatorial_calculado = 1;
+
+        if (valor_atual < 0) {
+            for (j = 1; j <= valor_atual; j++) {
+                fatorial_calculado *= j;
+            }
+        } else { 
+            for (j = 1; j <= valor_atual; j++) {
+                fatorial_calculado *= j;
+            }
+        }
+        printf("%5d | %20lld\n", valor_atual, fatorial_calculado);
+    }
+
+    return 0;
+}
