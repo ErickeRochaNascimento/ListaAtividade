@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main() {
+    int valor_lido;
+    float soma_dos_valores = 0.0f;
+    int quantidade_de_valores = 0;
+    float media_calculada;
+
+    printf("Calculadora de Média Aritmética de Valores Positivos\n");
+    printf("Digite valores inteiros positivos. Para encerrar, digite um número negativo.\n\n");
+
+    while (1) {
+        printf("Digite um valor: ");
+        scanf("%d", &valor_lido);
+
+        if (valor_lido < 0) {
+            break;
+        }
+
+        if (valor_lido > 0) {
+            soma_dos_valores += valor_lido;
+            quantidade_de_valores++;
+        }
+    }
+
+    printf("\nResultado\n");
+    if (quantidade_de_valores > 0) {
+        media_calculada = soma_dos_valores / quantidade_de_valores;
+        printf("Foram inseridos %d valores positivos.\n", quantidade_de_valores);
+        printf("A soma dos valores positivos é: %.2f\n", soma_dos_valores);
+        printf("A média aritmética dos valores positivos é: %.2f\n", media_calculada);
+    } else {
+        printf("Nenhum valor positivo foi inserido para calcular a média.\n");
+    }
+
+    return 0;
+}
