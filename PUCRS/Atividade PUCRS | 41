@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main() {
+    int NUMERO_DE_ALUNOS = 50;
+    float SOMA_DOS_PESOS = 10.0f, somaMediasDaTurma = 0.0f, NOTA_APROVACAO = 7.0f, nota1, nota2, nota3, mediaPonderada, mediaGeralDaTurma;
+
+    printf("Calculadora de Média Ponderada para %d Alunos\n", NUMERO_DE_ALUNOS);
+
+    for (int i = 1; i <= NUMERO_DE_ALUNOS; i++) {
+        printf("\n--- Aluno %d ---\n", i);
+
+        printf("Digite a primeira nota do aluno %d: ", i);
+        scanf("%f", &nota1);
+
+        printf("Digite a segunda nota do aluno %d: ", i);
+        scanf("%f", &nota2);
+
+        printf("Digite a terceira nota do aluno %d: ", i);
+        scanf("%f", &nota3);
+
+        mediaPonderada = (nota1 * 2 + nota2 * 4 + nota3 * 3) / SOMA_DOS_PESOS;
+
+        printf("A média ponderada do aluno %d é: %.2f\n", i, mediaPonderada);
+
+        if (mediaPonderada >= NOTA_APROVACAO) {
+            printf("Situação: Aprovado\n");
+        } else {
+            printf("Situação: Reprovado\n");
+        }
+
+        somaMediasDaTurma += mediaPonderada;
+    }
+
+    if (NUMERO_DE_ALUNOS > 0) {
+        mediaGeralDaTurma = somaMediasDaTurma / NUMERO_DE_ALUNOS;
+    } else {
+        mediaGeralDaTurma = 0.0f;
+    }
+
+    printf("Cálculo concluído para todos os alunos.\n");
+    printf("A média geral da turma é: %.2f\n", mediaGeralDaTurma);
+
+    return 0;
+}
