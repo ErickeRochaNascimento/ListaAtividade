@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    float num, maior, menor;
+    printf("Digite um valor: "); scanf("%f",&num);
+    maior = num;
+    menor = num;
+
+    for(int contador = 1; contador < 50; contador++){
+        printf("Digite o %dº valor: ", contador);
+        scanf("%f", &num);
+        if(num >= maior){
+            maior = num;
+        } 
+        if(num <= menor){
+            menor = num;
+        } 
+    }
+    printf("O maior numero digitado foi: %f",maior);
+    printf("\nO menor numero digitado foi: %f",menor);
+
+
+    return 0;
+}
