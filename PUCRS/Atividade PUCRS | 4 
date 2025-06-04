@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    float chico = 1.50, ze = 1.10;
+    int ano;
+    for(ano = 0; ze <= chico; ano++){
+        chico = chico + 0.02;
+        ze = ze + 0.03;
+    }
+    printf("Com Chico partindo de 1.50m e Zé de 1.10m. \nCom um aumento anual respectivamente de 2cm e 3cm. \nLevaria %d anos para Zé ultrapassar a aultura de Chico.",ano);
+    return 0;
+}
