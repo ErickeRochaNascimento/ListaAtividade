@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int numero, contador = 0, resto;
+   
+    for(contador = 100; contador <= 200; contador++){
+        resto = contador % 2;
+        if(resto != 0){
+            printf("\n%d",contador);
+        }
+    }
+    return 0;
+}
