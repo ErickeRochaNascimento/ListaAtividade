@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+    int dentro0_25 = 0, dentro26_50 = 0, dentro51_75 = 0, dentro76_100 = 0;
+
+    while (1) {
+        printf("Digite um valor (negativo para encerrar): ");
+        scanf("%d", &num);
+
+        if (num < 0) {
+            break;
+        }
+
+        if (num >= 0 && num <= 25) {
+            dentro0_25++;
+        } else if (num >= 26 && num <= 50) {
+            dentro26_50++;
+        } else if (num >= 51 && num <= 75) {
+            dentro51_75++;
+        } else if (num >= 76 && num <= 100) {
+            dentro76_100++;
+        }
+    }
+
+    printf("\nQuantidade de valores no intervalo [0, 25]: %d\n", dentro0_25);
+    printf("Quantidade de valores no intervalo [26, 50]: %d\n", dentro26_50);
+    printf("Quantidade de valores no intervalo [51, 75]: %d\n", dentro51_75);
+    printf("Quantidade de valores no intervalo [76, 100]: %d\n", dentro76_100);
+
+    return 0;
+}
