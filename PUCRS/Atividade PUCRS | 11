@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    float n, a1, r, an, total;
+    int contador;
+    printf("Numero de Termos: "); scanf("%f",&n);
+    printf("Razao: "); scanf("%f",&r);
+    printf("Primeiro Termo: "); scanf("%f",&a1);
+    contador = n;
+
+    for(contador = 1; contador <= n; contador ++){
+        an = a1 + (contador - 1) * r; 
+        total += an;
+        printf("\n%d° %f",contador, an);
+    }
+    printf("\nTotal: %f",total);
+    return 0;
+}

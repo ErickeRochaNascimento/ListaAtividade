@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int numero, produto = 0, temPar = 0;
+
+    printf("Digite números inteiros positivos (0 para encerrar):\n");
+
+    do {
+        scanf("%d", &numero);
+
+        if (numero > 0 && numero % 2 == 0) {
+            produto += numero;
+            temPar = 1;
+        }
+        printf("Digite números inteiros positivos (0 para encerrar):\n");
+
+    } while (numero != 0);
+
+    if (temPar) {
+        printf("Produtório dos números pares: %d\n", produto);
+    } else {
+        printf("Nenhum número par foi digitado.\n");
+    }
+
+    return 0;
+}
+

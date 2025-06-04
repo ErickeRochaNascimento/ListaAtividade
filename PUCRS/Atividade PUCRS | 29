@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int numero, soma = 0, contador = 0;
+    float media;
+    
+    for(numero = 13; numero <= 73; numero++){
+        soma += numero;
+        contador++;
+    }
+    media = soma / contador;
+    printf("Média aritmética dos números entre 13 e 73: %.2f\n", media);
+    return 0;
+}
