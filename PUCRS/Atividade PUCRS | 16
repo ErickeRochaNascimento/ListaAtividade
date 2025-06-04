@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <math.h>
+
+void imprimirCabecalho() {
+    printf("\n%-10s %-15s %-15s %-15s\n", "Valor", "Quadrado", "Cubo", "Raiz Quadrada");
+    printf("---------------------------------------------------------------\n");
+}
+
+int main() {
+    double valor;
+    int contador = 0;
+
+    imprimirCabecalho();
+
+    while (1) {
+        printf("Digite um valor (0 para sair): ");
+        scanf("%lf", &valor);
+
+        if (valor == 0)
+            break;
+
+        printf("%-10.2lf %-15.2lf %-15.2lf %-15.4lf\n",
+               valor,
+               valor * valor,
+               valor * valor * valor,
+               sqrt(valor));
+
+        contador++;
+
+        if (contador % 20 == 0) {
+            imprimirCabecalho();
+        }
+    }
+
+    printf("\nFim do programa.\n");
+    return 0;
+}
