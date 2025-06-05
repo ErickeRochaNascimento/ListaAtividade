@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main() {
+    int codigo;
+    float n1, n2, n3, media;
+    float maior, peso_maior = 4.0, peso_restante = 3.0;
+
+    while (1) {
+        printf("Digite o código do aluno: ");
+        scanf("%d", &codigo);
+        if (codigo < 0)
+            break;
+
+        printf("Digite as três notas do aluno: ");
+        scanf("%f %f %f", &n1, &n2, &n3);
+
+        if (n1 >= n2 && n1 >= n3) {
+            maior = n1;
+            media = (n1 * peso_maior + n2 * peso_restante + n3 * peso_restante) / (peso_maior + 2 * peso_restante);
+        } else if (n2 >= n1 && n2 >= n3) {
+            maior = n2;
+            media = (n2 * peso_maior + n1 * peso_restante + n3 * peso_restante) / (peso_maior + 2 * peso_restante);
+        } else {
+            maior = n3;
+            media = (n3 * peso_maior + n1 * peso_restante + n2 * peso_restante) / (peso_maior + 2 * peso_restante);
+        }
+
+        printf("Código do aluno: %d\n", codigo);
+        printf("Notas: %.2f, %.2f, %.2f\n", n1, n2, n3);
+        printf("Média ponderada: %.2f\n", media);
+        if (media >= 5.0)
+            printf("APROVADO\n\n");
+        else
+            printf("REPROVADO\n\n");
+    }
+
+    return 0;
+}
