@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+    float num, soma = 0, media, percentualPositivo, percentualNegativo;
+    int valorPositivo = 0, valorNegativo = 0, totalValores = 0;
+
+    while (1) {
+        printf("Digite um valor (0 para encerrar): ");
+        scanf("%f", &num);
+
+        if (num == 0) {
+            break;
+        }
+
+        soma += num;
+        totalValores++;
+
+        if (num > 0) {
+            valorPositivo++;
+        } else {
+            valorNegativo++;
+        }
+    }
+
+    if (totalValores > 0) {
+        media = soma / totalValores;
+        percentualPositivo = (valorPositivo * 100.0) / totalValores;
+        percentualNegativo = (valorNegativo * 100.0) / totalValores;
+
+        printf("\nMédia dos valores: %.2f\n", media);
+        printf("Quantidade de valores positivos: %d\n", valorPositivo);
+        printf("Quantidade de valores negativos: %d\n", valorNegativo);
+        printf("Percentual de valores positivos: %.2f%%\n", percentualPositivo);
+        printf("Percentual de valores negativos: %.2f%%\n", percentualNegativo);
+    } else {
+        printf("\nNenhum valor foi inserido.\n");
+    }
+
+    return 0;
+}
