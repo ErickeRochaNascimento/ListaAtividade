@@ -46,4 +46,5 @@ Cada arquivo contém:
 Professor: Heleno Cardoso  
 Curso: Linguagem de Programação C  
 Estudante: Erick Nascimento
+
 UNIRUY - 2025  
