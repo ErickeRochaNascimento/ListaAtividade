@@ -26,17 +26,6 @@ ListaAtividade/
 - PUCRS: 12 exercícios
 - Total: 43 de 100 necessários
 
-## ✅ Progresso
-
-Verifique cada pasta (`IFSC/` e `PUCRS/`) para ver as soluções individuais.
-
-## 🧠 Observações
-
-Cada arquivo contém:
-- Código-fonte em C
-- Comentários explicativos
-- Identação e nomenclatura adequadas
-
 ## 🔗 Link para o repositório
 
 [GitHub - ListaAtividade](https://github.com/ErickeRochaNascimento/ListaAtividade)
