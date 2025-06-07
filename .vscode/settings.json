@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "atividade ifsc | 10": "c"
+        "atividade ifsc | 10": "c",
+        "stdio.h": "c"
     }
 }

@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int controle;
+
+    for (controle = 1000; controle <= 1999; controle++) {
+        if (controle % 11 == 5) {
+            printf("%d\n", controle);
+        }
+    }
+
+    return 0;
+}
