@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main() {
+    int num, qtde_pares = 0, qtde_impares = 0, soma_pares = 0, soma_total = 0, qtde_total = 0;
+
+    while (1) {
+        printf("Digite um número positivo (0 para sair): ");
+        scanf("%d", &num);
+
+        if (num == 0) break;
+
+        if (num > 0) {
+            soma_total += num;
+            qtde_total++;
+
+            if (num % 2 == 0) {
+                soma_pares += num;
+                qtde_pares++;
+            } else {
+                qtde_impares++;
+            }
+        }
+    }
+
+    if (qtde_pares > 0) {
+        printf("Média dos números pares: %.2f\n", (float)soma_pares / qtde_pares);
+    } else {
+        printf("Nenhum número par foi digitado.\n");
+    }
+
+    if (qtde_total > 0) {
+        printf("Média geral: %.2f\n", (float)soma_total / qtde_total);
+    } else {
+        printf("Nenhum número foi digitado.\n");
+    }
+
+    printf("Quantidade de números pares: %d\n", qtde_pares);
+    printf("Quantidade de números ímpares: %d\n", qtde_impares);
+
+    return 0;
+}
