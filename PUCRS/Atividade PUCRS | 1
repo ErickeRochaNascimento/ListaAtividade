@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int a, controle, negativos = 0;
+
+    for (controle = 0; controle < 5; controle++) {
+        printf("Digite um valor: ");
+        scanf("%d", &a);
+        if (a < 0) {
+            negativos++;
+        }
+    }
+
+    printf("Quantidade de valores negativos: %d\n", negativos);
+    return 0;
+}
