@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+    int codigo, qtde = 0;
+    float preco, preco_novo;
+    float soma_sem_aumento = 0, soma_com_aumento = 0;
+
+    printf("Digite o código do produto (negativo para encerrar): ");
+    scanf("%d", &codigo);
+
+    while (codigo >= 0) {
+        printf("Digite o preço de custo: ");
+        scanf("%f", &preco);
+
+        preco_novo = preco * 1.2;
+        printf("Código: %d - Preço com aumento: %.2f\n", codigo, preco_novo);
+
+        soma_sem_aumento += preco;
+        soma_com_aumento += preco_novo;
+        qtde++;
+
+        printf("Digite o código do produto (negativo para encerrar): ");
+        scanf("%d", &codigo);
+    }
+
+    if (qtde > 0) {
+        printf("Média dos preços sem aumento: %.2f\n", soma_sem_aumento / qtde);
+        printf("Média dos preços com aumento: %.2f\n", soma_com_aumento / qtde);
+    } else {
+        printf("Nenhum produto foi cadastrado.\n");
+    }
+
+    return 0;
+}
