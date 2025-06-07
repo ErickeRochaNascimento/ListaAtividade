@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    char nome[100];
+    float valor, bonus;
+    int i;
+
+    for(i = 0; i <= 150; i++) {
+        printf("Digite o nome do cliente: ");
+        scanf(" %[^\n]", nome);
+        printf("Digite o valor das compras no ano passado: ");
+        scanf("%f", &valor);
+
+        if(valor < 500000)
+            bonus = valor * 0.10;
+        else
+            bonus = valor * 0.15;
+
+        printf("Cliente: %s\n", nome);
+        printf("Bônus: R$ %.2f\n\n", bonus);
+    }
+
+    return 0;
+}
