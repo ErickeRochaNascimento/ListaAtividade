@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int N, i, num, j;
+    unsigned long long fatorial;
+
+    printf("Digite a quantidade de valores: ");
+    scanf("%d", &N);
+
+    for (i = 0; i < N; i++) {
+        printf("Digite um número inteiro: ");
+        scanf("%d", &num);
+
+        fatorial = 1;
+        for (j = 1; j <= num; j++) {
+            fatorial *= j;
+        }
+
+        printf("Número: %d\tFatorial: %llu\n", num, fatorial);
+    }
+
+    return 0;
+}
