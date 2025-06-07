@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int n, controle;
+    unsigned long long fatorial = 1;
+
+    printf("Digite um número inteiro positivo: ");
+    scanf("%d", &n);
+
+    if(n < 0) {
+        printf("Número inválido.\n");
+        return 1;
+    }
+
+    for(controle = 1; controle <= n; controle++) {
+        fatorial *= controle;
+    }
+
+    printf("Fatorial de %d é %llu\n", n, fatorial);
+
+    return 0;
+}
