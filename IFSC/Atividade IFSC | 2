@@ -1,0 +1,21 @@
+2. Escreva em pseudocódigo as expressões:
+a) (A + B) * C
+
+resultado ← (A + B) * C
+
+b) TOTAL / N
+
+resultado ← TOTAL / N
+
+c) A - B(C + D²) / E
+
+resultado ← A - B * (C + D^2) / E
+
+d) baseexpoente
+
+resultado ← base^expoente
+
+e) a * bc
+
+resultado ← a * b^c
+

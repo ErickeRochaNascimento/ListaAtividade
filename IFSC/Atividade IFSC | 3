@@ -1,0 +1,9 @@
+3 - Considerando as variáveis declaradas na tabela abaixo e mais a variável booleana TESTE, com valor FALSO, avalie as expressões a seguir, para cada uma das três combinações de valores apresentadas: 
+
+| Expressão                                                  | 01 (A=3, B=16, 'MIRIAM', 'ADVOGADO') | 02 (5, 64, 'PEDRO', 'MEDICO') | 03 (2.5, 9, 'ANA', 'PROFESSOR') |
+| ---------------------------------------------------------- | ------------------------------------ | ----------------------------- | ------------------------------- |
+| a) (A+1 >= √B) OU (NOME ≠ 'ANA')                           | V                                    |  V                            | V                               |
+| b) (A+1 >= √B) E (PROFISSAO = 'MEDICO')                    | F                                    |  F                            | F                               |
+| c) (NOME ≠ 'ANA') OU (PROFISSAO = 'MEDICO') E (A+1 >= √B)  | V                                    |  V                            | F                               |
+| d) NÃO TESTE E ((A+1) >= √B OU NÃO (PROFISSAO = 'MEDICO')) | V                                    |  F                            | V                               |
+| e) NÃO ((A+1 >= √B) E TESTE)                               | V                                    |  V                            | V                               |
