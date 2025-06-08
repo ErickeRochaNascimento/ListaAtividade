@@ -4,27 +4,27 @@ Repositório contendo soluções de exercícios em C das listas do **IFSC** e **
 
 ## 🎯 Objetivo
 
-Este trabalho tem como objetivo resolver 100 exercícios em linguagem C, com base nas listas do IFSC e PUCRS. Cada exercício está em um arquivo `.c` separado.
+Este trabalho tem como objetivo resolver 100 exercícios em linguagem C, com base nas listas do IFSC e PUCRS. Cada exercício está em um arquivo separado.
 
 ## 📁 Estrutura do Repositório
 
 ```
 ListaAtividade/
 ├── IFSC/
-│   ├── exercicio7.c
-│   ├── exercicio8.c
+│   ├── exercicio7
+│   ├── exercicio8
 │   └── ...
 ├── PUCRS/
-│   ├── exercicio7.c
+│   ├── exercicio7
 │   └── ...
 └── README.md
 ```
 
 ## 🗂️ Distribuição das Questões
 
-- IFSC: 37 exercícios
+- IFSC: 39 exercícios
 - PUCRS: 33 exercícios
-- Total: 70 de 100 necessários
+- Total: 72 de 100 necessários
 
 ## 🔗 Link para o repositório
 
