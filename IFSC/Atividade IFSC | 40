@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main() {
+    char nome[100];
+    int qtd_parafusos, qtd_porcas, qtd_arruelas;
+    float preco_parafuso, preco_porcas, preco_arruelas;
+    float desconto_parafuso, desconto_porcas, desconto_arruelas;
+    float total_bruto, total_desconto, total_pagar;
+
+    printf("Nome do cliente: ");
+    fgets(nome, sizeof(nome), stdin);
+
+    printf("Quantidade de parafusos: ");
+    scanf("%d", &qtd_parafusos);
+    printf("Preço unitário do parafuso: ");
+    scanf("%f", &preco_parafuso);
+
+    printf("Quantidade de porcas: ");
+    scanf("%d", &qtd_porcas);
+    printf("Preço unitário da porca: ");
+    scanf("%f", &preco_porcas);
+
+    printf("Quantidade de arruelas: ");
+    scanf("%d", &qtd_arruelas);
+    printf("Preço unitário da arruela: ");
+    scanf("%f", &preco_arruelas);
+
+    desconto_parafuso = qtd_parafusos * preco_parafuso * 0.20;
+    desconto_porcas = qtd_porcas * preco_porcas * 0.10;
+    desconto_arruelas = qtd_arruelas * preco_arruelas * 0.30;
+
+    total_bruto = (qtd_parafusos * preco_parafuso) + (qtd_porcas * preco_porcas) + (qtd_arruelas * preco_arruelas);
+    total_desconto = desconto_parafuso + desconto_porcas + desconto_arruelas;
+    total_pagar = total_bruto - total_desconto;
+
+    printf("\nCliente: %s", nome);
+    printf("Parafusos: %d\n", qtd_parafusos);
+    printf("Porcas: %d\n", qtd_porcas);
+    printf("Arruelas: %d\n", qtd_arruelas);
+    printf("Total de desconto: R$ %.2f\n", total_desconto);
+    printf("Total a pagar: R$ %.2f\n", total_pagar);
+
+    return 0;
+}

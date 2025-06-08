@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    float salario_minimo, valor_vendas, salario_total;
+    int carros_vendidos;
+
+    printf("Valor do salário mínimo: ");
+    scanf("%f", &salario_minimo);
+
+    printf("Quantidade de carros vendidos: ");
+    scanf("%d", &carros_vendidos);
+
+    printf("Valor total das vendas: ");
+    scanf("%f", &valor_vendas);
+
+    salario_total = (2 * salario_minimo) + (carros_vendidos * 50.0) + (valor_vendas * 0.05);
+
+    printf("Salário total do vendedor: R$ %.2f\n", salario_total);
+
+    return 0;
+}
