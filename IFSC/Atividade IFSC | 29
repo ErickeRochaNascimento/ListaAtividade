@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    int data, d, m, a;
+    printf("Digite a data no formato DDMMAA: ");
+    scanf("%d", &data);
+    d = data / 10000;
+    m = (data / 100) % 100;
+    a = data % 100;
+    printf("Data no formato AAMMDD: %02d%02d%02d\n", a, m, d);
+    return 0;
+}
