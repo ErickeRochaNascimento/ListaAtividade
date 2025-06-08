@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int N;
+
+    for (int i = 0; i < 20; i++) {
+        scanf("%d", &N);
+
+        for (int j = 1; j <= N; j++) {
+            printf("%d x %d = %d\n", j, N, j * N);
+        }
+    }
+
+    return 0;
+}

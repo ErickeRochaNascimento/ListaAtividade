@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int num_aluno, num_aluno_mais_alto, num_aluno_mais_baixo;
+    int altura, altura_mais_alta = 0, altura_mais_baixa = 10000;
+
+    for (int i = 0; i < 5; i++) {
+        scanf("%d %d", &num_aluno, &altura);
+
+        if (altura > altura_mais_alta) {
+            altura_mais_alta = altura;
+            num_aluno_mais_alto = num_aluno;
+        }
+        if (altura < altura_mais_baixa) {
+            altura_mais_baixa = altura;
+            num_aluno_mais_baixo = num_aluno;
+        }
+    }
+
+    printf("Aluno mais alto: %d, Altura: %d cm\n", num_aluno_mais_alto, altura_mais_alta);
+    printf("Aluno mais baixo: %d, Altura: %d cm\n", num_aluno_mais_baixo, altura_mais_baixa);
+
+    return 0;
+}
