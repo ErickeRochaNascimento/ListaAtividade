@@ -24,7 +24,7 @@ ListaAtividade/
 
 - IFSC: 39 exercícios
 - PUCRS: 33 exercícios
-- Total: 72 de 100 necessários
+- Total: 74 de 100 necessários
 
 ## 🔗 Link para o repositório
 
