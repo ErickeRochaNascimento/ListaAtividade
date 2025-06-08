@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int N;
+    double E = 1.0;
+    
+    printf("Digite um valor: ");
+    scanf("%d", &N);
+
+    double fatorial = 1.0;
+    for (int i = 1; i <= N; i++) {
+        fatorial *= i;
+        E += 1.0 / fatorial;
+    }
+
+    printf("E = %.6f\n", E);
+
+    return 0;
+}
