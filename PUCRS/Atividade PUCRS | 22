@@ -1,0 +1,56 @@
+#include <stdio.h>
+
+int main() {
+    int idade;
+    char sexo;
+    float salario;
+
+    int total_pessoas = 0;
+    float soma_salarios = 0;
+    int maior_idade = 0;
+    int menor_idade = 999;
+    int mulheres_ate_100 = 0;
+
+    printf("Digite a idade (número negativo para encerrar): ");
+    scanf("%d", &idade);
+
+    while (idade >= 0) {
+        printf("Digite o sexo (M/F): ");
+        scanf(" %c", &sexo);  // espaço antes do %c para ignorar enter anterior
+
+        printf("Digite o salário: R$ ");
+        scanf("%f", &salario);
+
+        total_pessoas++;
+        soma_salarios += salario;
+
+        if (idade > maior_idade) {
+            maior_idade = idade;
+        }
+        if (idade < menor_idade) {
+            menor_idade = idade;
+        }
+
+        if (sexo == 'F' || sexo == 'f') {
+            if (salario <= 100.0) {
+                mulheres_ate_100++;
+            }
+        }
+
+        printf("\nDigite a idade (número negativo para encerrar): ");
+        scanf("%d", &idade);
+    }
+
+    if (total_pessoas > 0) {
+        float media_salarios = soma_salarios / total_pessoas;
+        printf("\nRESULTADOS DA PESQUISA:\n");
+        printf("a) Média salarial do grupo: R$ %.2f\n", media_salarios);
+        printf("b) Maior idade: %d anos\n", maior_idade);
+        printf("   Menor idade: %d anos\n", menor_idade);
+        printf("c) Mulheres com salário até R$100,00: %d\n", mulheres_ate_100);
+    } else {
+        printf("Nenhum dado foi inserido.\n");
+    }
+
+    return 0;
+}
