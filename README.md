@@ -22,9 +22,9 @@ ListaAtividade/
 
 ## 🗂️ Distribuição das Questões
 
-- IFSC: 45 exercícios
-- PUCRS: 41 exercícios
-- Total: 86 de 100 necessários
+- IFSC:  45 exercícios
+- PUCRS: 42 exercícios
+- Total: 87 de 100 necessários
 
 ## 🔗 Link para o repositório
 
@@ -35,5 +35,4 @@ ListaAtividade/
 Professor: Heleno Cardoso  
 Curso: Linguagem de Programação C  
 Estudante: Erick Nascimento
-
 UNIRUY - 2025  
