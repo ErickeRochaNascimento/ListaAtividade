@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int i, j, primo;
+    unsigned long long produto = 1;
+
+    for (i = 92; i <= 1478; i++) {
+        primo = 1;
+
+        if (i < 2) {
+            primo = 0;
+        } else {
+            for (j = 2; j * j <= i; j++) {
+                if (i % j == 0) {
+                    primo = 0;
+                    break;
+                }
+            }
+        }
+
+        if (primo == 1) {
+            produto *= i;
+        }
+    }
+
+    printf("Produto dos números primos entre 92 e 1478: %llu\n", produto);
+
+    return 0;
+}
