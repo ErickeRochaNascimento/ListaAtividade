@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    float a, b;
+    
+    printf("Digite um valor: ");
+    scanf("%f", &a);
+    printf("\nDigite um valor: ");
+    scanf("%f", &b);
+
+    if (a == b) {
+        printf("Os extremos não podem ser iguais.\n");
+        return 1;
+    }
+
+    float passo = (b - a) / 3.0;
+
+    float p1 = a + passo;
+    float p2 = a + 2 * passo;
+
+    printf("Ponto 1: %.2f\n", p1);
+    printf("Ponto 2: %.2f\n", p2);
+
+    return 0;
+}

@@ -23,8 +23,8 @@ ListaAtividade/
 ## 🗂️ Distribuição das Questões
 
 - IFSC:  45 exercícios
-- PUCRS: 44 exercícios
-- Total: 89 de 100 necessários
+- PUCRS: 46 exercícios
+- Total: 91 de 100 necessários
 
 ## 🔗 Link para o repositório
 
