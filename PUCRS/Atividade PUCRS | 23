@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int idade;
+    char sexo, olhos, cabelos;
+
+    printf("Digite a idade (-1 para encerrar): ");
+    scanf("%d", &idade);
+
+    while (idade != -1) {
+        printf("Sexo (M/F): ");
+        scanf(" %c", &sexo);
+
+        printf("Cor dos olhos (A = azuis, V = verdes, C = castanhos): ");
+        scanf(" %c", &olhos);
+
+        printf("Cor dos cabelos (L = louros, C = castanhos, P = pretos): ");
+        scanf(" %c", &cabelos);
+    }
+    return 0;
+}
