@@ -1,0 +1,57 @@
+#include <stdio.h>
+
+int main() {
+    int sexo, idade;
+    float altura;
+
+    int total = 0;
+    int total_mulheres = 0, total_homens = 0;
+    int soma_idade = 0, soma_idade_homens = 0;
+    float soma_altura_mulheres = 0.0;
+    int entre_18_e_35 = 0;
+
+    do {
+        printf("Digite o sexo (0 - feminino, 1 - masculino): ");
+        scanf("%d", &sexo);
+
+        printf("Digite a idade: ");
+        scanf("%d", &idade);
+
+        printf("Digite a altura (em metros): ");
+        scanf("%f", &altura);
+
+        soma_idade += idade;
+        total++;
+
+        if (sexo == 0) {
+            soma_altura_mulheres += altura;
+            total_mulheres++;
+        } else if (sexo == 1) {
+            soma_idade_homens += idade;
+            total_homens++;
+        }
+
+        if (idade >= 18 && idade <= 35) {
+            entre_18_e_35++;
+        }
+
+    } while (total < 1000);
+
+    printf("\n--- Resultados da Pesquisa ---\n");
+    printf("Média da idade do grupo: %.2f\n", (float)soma_idade / total);
+
+    if (total_mulheres > 0)
+        printf("Média da altura das mulheres: %.2f\n", soma_altura_mulheres / total_mulheres);
+    else
+        printf("Nenhuma mulher foi registrada.\n");
+
+    if (total_homens > 0)
+        printf("Média da idade dos homens: %.2f\n", (float)soma_idade_homens / total_homens);
+    else
+        printf("Nenhum homem foi registrado.\n");
+
+    printf("Percentual de pessoas com idade entre 18 e 35 anos: %.2f%%\n",
+           (float)entre_18_e_35 / total * 100);
+
+    return 0;
+}
