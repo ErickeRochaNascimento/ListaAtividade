@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int controle = 0, num = 2;
+
+    while (controle < 5) {
+        int soma = 0;
+        for (int i = 1; i <= num / 2; i++) {
+            if (num % i == 0) {
+                soma += i;
+            }
+        }
+        if (soma == num) {
+            printf("%d\n", num);
+            controle++;
+        }
+        num++;
+    }
+
+    return 0;
+}
