@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int n, m, i, j;
+    unsigned long long fatorial;
+    int somatorio;
+
+    printf("Digite a quantidade de valores (n): ");
+    scanf("%d", &n);
+
+    for (i = 0; i < n; i++) {
+        printf("Digite um valor inteiro e positivo (m): ");
+        scanf("%d", &m);
+
+        somatorio = 0;
+        for (j = 1; j <= m; j++) {
+            somatorio += j;
+        }
+
+        fatorial = 1;
+        for (j = 1; j <= m; j++) {
+            fatorial *= j;
+        }
+
+        printf("Valor: %d\tSomatório: %d\tFatorial: %llu\n", m, somatorio, fatorial);
+    }
+
+    return 0;
+}

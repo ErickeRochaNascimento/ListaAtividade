@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main() {
+    int i, matricula;
+    float nota;
+    char conceito;
+
+    for (i = 0; i < 75; i++) {
+        printf("Matricula do aluno: ");
+        scanf("%d", &matricula);
+        printf("Nota final: ");
+        scanf("%f", &nota);
+
+        switch ((int)nota) {
+            case 0: case 1: case 2: case 3: case 4:
+                conceito = 'D';
+                break;
+            case 5: case 6:
+                conceito = 'C';
+                break;
+            case 7: case 8:
+                conceito = 'B';
+                break;
+            case 9: case 10:
+                conceito = 'A';
+                break;
+            default:
+                conceito = '?';
+        }
+
+        printf("Matricula: %d - Conceito: %c\n", matricula, conceito);
+    }
+
+    return 0;
+}
