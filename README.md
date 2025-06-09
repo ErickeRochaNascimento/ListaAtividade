@@ -6,6 +6,11 @@ Repositório contendo soluções de exercícios em C das listas do **IFSC** e **
 
 Este trabalho tem como objetivo resolver 100 exercícios em linguagem C, com base nas listas do IFSC e PUCRS. Cada exercício está em um arquivo separado.
 
+Professor: Heleno Cardoso  
+Curso: Linguagem de Programação C  
+Estudante: Erick Nascimento
+UNIRUY - 2025  
+
 ## 📁 Estrutura do Repositório
 
 ```
@@ -31,8 +36,3 @@ ListaAtividade/
 [GitHub - ListaAtividade](https://github.com/ErickeRochaNascimento/ListaAtividade)
 
 ---
-
-Professor: Heleno Cardoso  
-Curso: Linguagem de Programação C  
-Estudante: Erick Nascimento
-UNIRUY - 2025  
